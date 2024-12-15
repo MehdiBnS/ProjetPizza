@@ -1,0 +1,137 @@
+<section id="concon">
+    <div class="form-container">
+        <form method='POST' action="index.php?page=mail" class="form-flex">
+            <div class="form-column">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="LeVAllOIS">
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Hugo">
+                
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" name="tel" placeholder="06.06.06.07.23">
+                
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="lapizza@contact.fr">
+            </div>
+            <div class="form-column">
+                <label name='checkbox'for="checkbox">Raison : <br>
+                <input name='checkbox' id="checkbox" type="checkbox" style="color:white">Commande<br>
+                <input name='checkbox' id="checkbox" type="checkbox" style="color:white">Professionnel<br>
+                <input name='checkbox'id="checkbox" type="checkbox" style="color:white">Demande<br>
+                <input name='checkbox'id="checkbox" type="checkbox" style="color:white">Autres<br>
+                </label>
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" placeholder="Votre message..."></textarea>
+                
+                <button type="submit">ENVOYER</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2738597.453286274!2d-8.856706287500018!3d47.90907329999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4810d0993393f3d1%3A0x1b77e23f89638fec!2sLa%20Napolitaine!5e0!3m2!1sfr!2sfr!4v1731424507195!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100px;">
+    <p style=" display:flex; justify-content:center;align-items:center; color:  white; background-color: #a34b03; width: 70%; height: 50px; text-align: center; font-size: 25px;">Je souhaite réserver | <a id="num"href= "tel:+33609232167">06.09.23.21.67</a></p>
+</div>
+
+
+<style>
+    label {
+        color: white;
+    }
+    input {
+        font-family: sans-serif;
+    
+    }
+    #concon {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+
+.form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 400px;
+}
+
+label {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #a34b03;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #8e3e02;
+}
+
+.map-container {
+    width: 35%;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#num {
+    text-decoration: none ;
+    color: goldenrod;
+    transition: transform 0,5 ease;
+}
+#num:hover {
+    color: rgb(100, 90, 28)enrod;
+    transform: scale(1,2);
+}
+</style>
